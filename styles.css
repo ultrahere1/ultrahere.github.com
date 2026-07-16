@@ -42,6 +42,8 @@ h1 {
     left: 0;
     width: 100%;
 
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,10 +54,13 @@ h1 {
     backdrop-filter: blur(8px);
 
     z-index: 1000;
-    .navbar {
-    left: 0;
-    right: 0;
-    width: auto;
+    .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
 }
 }
 
