@@ -1,95 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Times New Roman", serif;
-    background: url("Lekiu_strike.jpg") no-repeat center / cover fixed;
     margin: 0;
     min-height: 100vh;
+
+    font-family: "Times New Roman", serif;
+
+    background: url("Lekiu_strike.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
+
+/* ===========================
+   Hero Section
+=========================== */
 
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-main {
-  max-width: 600px;
-  width: 90%;
 
-  background: #fff;
-  padding: 32px;
-  border-radius: 8px;
-}
-h1 {
-  color:#0415aa;
-  margin-top:0;
-}
-.button-link { 
-  background:#0430aa; 
-  color:#ffffff; 
-  border:none; 
-  padding:12px 24px; 
-  border-radius:999px; 
-  cursor:pointer; 
-}
-.button-link:hover { 
-  background: #ffffff; 
-  color: #0430aa;
-}
-/* Navigation Bar */
-.navbar {
-    position: fixed;      /* stays at the top */
-    top: 0;
-    left: 0;
-    width: 10%;
+    min-height: 100vh;
+
+    /* Prevent the navbar from covering the content */
+    padding-top: 80px;
 
     box-sizing: border-box;
+}
+
+/* ===========================
+   Main Card
+=========================== */
+
+main {
+    max-width: 600px;
+    width: 90%;
+
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1 {
+    color: #0415aa;
+    margin-top: 0;
+}
+
+/* ===========================
+   Join Button
+=========================== */
+
+.button-link {
+    display: inline-block;
+
+    background: #0430aa;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 24px;
+    border-radius: 999px;
+
+    transition: 0.25s;
+}
+
+.button-link:hover {
+    background: white;
+    color: #0430aa;
+}
+
+/* ===========================
+   Navigation Bar
+=========================== */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 70px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px 40px;
+    padding: 0 40px;
 
-    background: rgba(0, 0, 0, 0.45);
+    box-sizing: border-box;
+
+    background: rgba(20, 45, 90, 0.75);
     backdrop-filter: blur(8px);
 
     z-index: 1000;
-    .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
 }
-}
+
+/* Logo */
 
 .logo {
     color: white;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
+
+    white-space: nowrap;
 }
+
+/* Navigation Links */
 
 .nav-links {
     display: flex;
+    align-items: center;
+
     list-style: none;
-    gap: 30px;
+
     margin: 0;
     padding: 0;
+
+    gap: 30px;
+}
+
+.nav-links li {
+    margin: 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
 
-    transition: color 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: color 0.25s;
 }
 
 .nav-links a:hover {
     color: #4da3ff;
 }
-html {
-    scroll-behavior: smooth;
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
 }
