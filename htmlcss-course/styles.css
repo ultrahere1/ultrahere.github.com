@@ -1,0 +1,27 @@
+body { 
+  font-family: "Times New Roman", serif; 
+  background: url("htmlcss-course/images/Lekiu_strike.jpg") no-repeat center / cover fixed;
+}
+main {
+  max-width: 600px;
+  margin: 60px auto;
+  background:#fff;
+  padding:32px;
+  border-radius:8px;
+}
+h1 {
+  color:#0415aa;
+  margin-top:0;
+}
+.button-link { 
+  background:#0430aa; 
+  color:#0afa52; 
+  border:none; 
+  padding:12px 24px; 
+  border-radius:999px; 
+  cursor:pointer; 
+}
+.button-link:hover { 
+  background: #ffffff; 
+  color: #0430aa;
+}
