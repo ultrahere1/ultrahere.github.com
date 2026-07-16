@@ -1,6 +1,6 @@
 body { 
   font-family: "Times New Roman", serif; 
-  background: url("../images/Lekiu_strike.jpg") no-repeat center / cover fixed;
+  background: url("htmlcss-course/images/Lekiu_strike.jpg") no-repeat center / cover fixed;
 }
 main {
   max-width: 600px;
